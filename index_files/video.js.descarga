@@ -1,0 +1,16 @@
+var myVideo = document.getElementById("videoMe"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function moreSeconds() { 
+    myVideo.currentTime = myVideo.currentTime + 10;
+} 
+
+function lessSeconds() { 
+    myVideo.currentTime = myVideo.currentTime - 10;
+} 
